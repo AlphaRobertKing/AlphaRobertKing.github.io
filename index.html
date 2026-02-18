@@ -1,56 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Highrise Build Investments</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-        header {
-            background: #0b1d3a;
-            color: white;
-            padding: 40px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-        nav {
-            background: #f4f4f4;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            margin: 10px;
-            text-decoration: none;
-            color: #0b1d3a;
-            font-weight: bold;
-        }
-        section {
-            padding: 40px;
-        }
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .card {
-            background: #f9f9f9;
-            padding: 20px;
-            border-radius: 8px;
-        }
-        footer {
-            background: #0b1d3a;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Highrise Build Investments</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(rgba(11,29,58,0.8), rgba(11,29,58,0.8)),
+    url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+header h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 20px;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    color: #0b1d3a;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card:hover {
+    background: #e0e0e0;
+}
+
+.why {
+    background: #0b1d3a;
+    color: white;
+}
+
+.contact {
+    text-align: center;
+}
+
+footer {
+    background: #0b1d3a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* WhatsApp Button */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px 18px;
+    border-radius: 50%;
+    font-size: 22px;
+    text-decoration: none;
+}
+</style>
 </head>
 
 <body>
@@ -60,43 +96,48 @@
     <p>Building the Future with Confidence</p>
 </header>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<section id="about">
-    <h2>About Us</h2>
-    <p>
-        Highrise Build Investments is a construction and property investment company committed to delivering
-        high-quality infrastructure solutions. We specialize in residential and commercial construction,
-        renovations, consultancy, and building equipment supply.
-    </p>
+<section>
+<h2>About Us</h2>
+<p>
+Highrise Build Investments is a construction and property investment company committed
+to delivering high-quality infrastructure solutions. We specialize in construction,
+property development, renovations, consultancy, building investments, and equipment supply.
+</p>
 </section>
 
-<section id="services">
-    <h2>Our Services</h2>
-    <div class="services">
-        <div class="card">Construction</div>
-        <div class="card">Property Development</div>
-        <div class="card">Renovations</div>
-        <div class="card">Consultancy</div>
-        <div class="card">Building Investments</div>
-        <div class="card">Building Equipment Supply</div>
-    </div>
+<section>
+<h2>Our Services</h2>
+<div class="services">
+<div class="card">Construction</div>
+<div class="card">Property Development</div>
+<div class="card">Renovations</div>
+<div class="card">Consultancy</div>
+<div class="card">Building Investments</div>
+<div class="card">Equipment Supply</div>
+</div>
 </section>
 
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>📞 Phone: +263 775 202 451</p>
-    <p>✉️ Email: highrisebuildinvest@gmail.com</p>
-    <p>📍 Location: Epworth, Harare</p>
+<section class="why">
+<h2>Why Choose Us</h2>
+<p style="text-align:center; max-width:700px; margin:auto;">
+We combine expertise, innovation, and reliability to deliver projects on time and
+within budget. Our commitment to quality and customer satisfaction makes us a trusted
+partner for construction and investment solutions.
+</p>
+</section>
+
+<section class="contact">
+<h2>Contact Us</h2>
+<p>📞 +263 775 202 451</p>
+<p>✉️ highrisebuildinvest@gmail.com</p>
+<p>📍 Epworth, Harare</p>
 </section>
 
 <footer>
-    <p>© 2026 Highrise Build Investments. All Rights Reserved.</p>
+<p>© 2026 Highrise Build Investments</p>
 </footer>
+
+<a class="whatsapp" href="https://wa.me/263775202451">💬</a>
 
 </body>
 </html>
